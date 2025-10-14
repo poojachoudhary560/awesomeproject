@@ -1,3 +1,4 @@
+import { fontFamilies } from '../constants/fonts';
 import { colors } from '../constants/colors';
 import { fontSize, spacing } from '../constants/dimensions';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
@@ -32,11 +33,13 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: fontSize.lg,
     paddingVertical: spacing.sm,
+    fontFamily: fontFamilies.Medium,
   },
   artist: {
     color: colors.textSecondary,
     textAlign: 'center',
     fontSize: fontSize.md,
+    fontFamily: fontFamilies.Regular,
   },
 });
 
