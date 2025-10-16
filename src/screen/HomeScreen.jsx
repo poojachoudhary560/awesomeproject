@@ -3,13 +3,13 @@ import SongCardWithCategory from '../components/SongCardWithCategory';
 import Header from '../components/Header';
 import FloatingPlayer from '../components/FloatingPlayer';
 import { colors } from '../constants/colors';
-
+import { songsWithCategory } from '../data/songsWithCategory';
 function HomeScreen() {
   return (
     <View style={styles.container}>
       <Header />
       <FlatList
-        data={[1, 2, 3, 4, 5]}
+        data={songsWithCategory}
         renderItem={SongCardWithCategory}
         contentContainerStyle={{
           paddingBottom: 500,

@@ -4,12 +4,12 @@ import { fontFamilies } from '../constants/fonts';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 import SongCard from './SongCard';
 
-function SongCardWithCategory() {
+function SongCardWithCategory({ item }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.headingText}>Recommended for you</Text>
+      <Text style={styles.headingText}>{item.title}</Text>
       <FlatList
-        data={[1, 2, 3, 4, 5]}
+        data={item.songs}
         renderItem={SongCard}
         horizontal={true}
         ItemSeparatorComponent={
