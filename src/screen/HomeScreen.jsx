@@ -1,6 +1,7 @@
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 import SongCardWithCategory from '../components/SongCardWithCategory';
 import Header from '../components/Header';
+import FloatingPlayer from '../components/FloatingPlayer';
 import { colors } from '../constants/colors';
 
 function HomeScreen() {
@@ -14,6 +15,7 @@ function HomeScreen() {
           paddingBottom: 500,
         }}
       />
+      <FloatingPlayer />
     </View>
   );
 }

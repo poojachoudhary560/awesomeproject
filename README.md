@@ -104,3 +104,7 @@ To learn more about React Native, take a look at the following resources:
 - Absolute Imports
 - design constants
 - components
+  - home screen
+  - floating player
+  - liked songs screen
+  - current song player screen with controls

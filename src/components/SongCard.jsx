@@ -3,14 +3,14 @@ import { colors } from '../constants/colors';
 import { fontSize, spacing } from '../constants/dimensions';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
-function SongCard() {
+function SongCard({ containerStyle, imageStyle }) {
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={[styles.container, containerStyle]}>
       <Image
         source={{
           uri: 'https://www.pixelstalk.net/wp-content/uploads/2016/07/Free-Amazing-Background-Images-Nature.jpg',
         }}
-        style={styles.coverImage}
+        style={[styles.coverImage, imageStyle]}
       />
       <Text style={styles.title}>Monster Go Home</Text>
       <Text style={styles.artist}>Alan Walker</Text>
@@ -20,8 +20,8 @@ function SongCard() {
 
 const styles = StyleSheet.create({
   container: {
-    height: 330,
-    width: 250,
+    // height: 330,
+    // width: 250,
   },
   coverImage: {
     height: 250,
