@@ -2,10 +2,22 @@ import { fontFamilies } from '../constants/fonts';
 import { colors } from '../constants/colors';
 import { fontSize, spacing } from '../constants/dimensions';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import TrackPlayer from 'react-native-track-player';
 
 function SongCard({ item, containerStyle, imageStyle }) {
+  const handlePlay = async () => {
+    console.log(item);
+    await TrackPlayer.add({
+      ...item,
+      url: require('../../assets/songs/song1.mp3'),
+    });
+    await TrackPlayer.play();
+  };
   return (
-    <TouchableOpacity style={[styles.container, containerStyle]}>
+    <TouchableOpacity
+      style={[styles.container, containerStyle]}
+      onPress={() => handlePlay()}
+    >
       <Image
         source={{
           uri: item.artwork,

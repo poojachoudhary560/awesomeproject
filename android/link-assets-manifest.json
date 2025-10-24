@@ -20,6 +20,10 @@
     {
       "path": "assets/fonts/Roboto-Regular.ttf",
       "sha1": "3bff51436aa7eb995d84cfc592cc63e1316bb400"
+    },
+    {
+      "path": "assets/songs/song1.mp3",
+      "sha1": "662ad6da656d7176f5fd802cb15c5346e2eea62d"
     }
   ]
 }
